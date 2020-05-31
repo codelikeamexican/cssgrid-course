@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template: 100px 400px 100px / 200px 1fr;
+    grid-gap:10px;
+    height: 100pv;
+    grid-template-areas: "header header" 
+                         "left contenido" 
+                         "footer footer";
+    
+}
+
+.header{
+    grid-area: header;
+    background-color: deepskyblue;
+}
+
+.left{
+    grid-area: left;
+    background-color: forestgreen;
+}
+.contenido{
+    grid-area: contenido;
+    background-color: lightcoral;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: navy;
+}
