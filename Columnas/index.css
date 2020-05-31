@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+    grid-gap:10px;
+    height: 100pv;
+}
+.item:nth-of-type(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item:nth-of-type(7){
+    grid-column: 2/ span 2;
+}
+.item:nth-of-type(8){
+    grid-column: 1/ span 2;
+}
+.item{
+    background-color: navy;
+}
