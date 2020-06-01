@@ -5,6 +5,9 @@ body{
     text-align: center;
     color: white;
 }
+.item{
+    background-color: blue;
+}
 .container{
     display: grid;
     grid-template: [inicioRow] 200px [row1] 200px [finalRow] / [inicio] 1fr [linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4] 1fr [linea5] 1fr [linea6] 1fr [final];
