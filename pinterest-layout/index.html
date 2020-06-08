@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,250px);
+            grid-gap:5px;
+            justify-content: center;
+         
+        }
+
+        .item{
+            border-radius: 5px;
+            padding:10px;
+            background: #f2f2f2;
+            
+        }
+        .item img{
+            max-width: 100%;
+        }
+
+        .level-1{
+            grid-row-end: span 2;
+        }
+        .level-2{
+            grid-row-end: span 1;
+        }
+        .level-3{
+            grid-row-end: span 2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item level-1">
+        <img src="./imgs/4d8bbd3b3247540465f127da5b95d184.jpg" alt="">
+    </div>
+    <div class="item level-2">
+        <img src="./imgs/5ffed6d76542269316e9c6f8898ba967.jpg" alt="">
+    </div>
+    <div class="item level-3">
+        <img src="./imgs/d83a77d582241d8214936b1a0bf4ffcf.jpg" alt="">
+    </div>
+    <div class="item level-1">
+        <img src="./imgs/4d8bbd3b3247540465f127da5b95d184.jpg" alt="">
+    </div>
+    <div class="item level-2">
+        <img src="./imgs/5ffed6d76542269316e9c6f8898ba967.jpg" alt="">
+    </div>
+    <div class="item level-3">
+        <img src="./imgs/d83a77d582241d8214936b1a0bf4ffcf.jpg" alt="">
+    </div>
+      <div class="item level-1">
+        <img src="./imgs/4d8bbd3b3247540465f127da5b95d184.jpg" alt="">
+    </div>
+    <div class="item level-2">
+        <img src="./imgs/5ffed6d76542269316e9c6f8898ba967.jpg" alt="">
+    </div>
+    <div class="item level-3">
+        <img src="./imgs/d83a77d582241d8214936b1a0bf4ffcf.jpg" alt="">
+    </div>
+</div>    
+</body>
+</html>
